@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Some project name</title>
+    <link href="./reset.scss" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <style>
+        html {
+            font-size: 12px;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background: rgba(242, 242, 242, 0.11);
+        }
+
+        .is-hidden {
+            display: none;
+        }
+
+        .container {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        .c-comment-form {
+            margin-top: 6px;
+        }
+
+        .comment-text {
+            padding: 12px;
+            width: 100%;
+            display: block;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .username-text {
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            margin-top: 6px;
+            width: 200px;
+        }
+
+        .c-comment-form label {
+            display: none;
+        }
+
+        .c-comment {
+            border: 1px solid #eee;
+            padding: 12px;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        .c-comment__header {
+            display: flex;
+            align-content: center;
+            margin-bottom: 6px;
+        }
+        .c-comment__text {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .c-comment__user {
+            color: #029EFF;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .c-comment__timestamp {
+            margin-left: 12px;
+            margin-top: 3px;
+            font-size: .8rem;
+        }
+
+        .c-header {
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="c-header">
+        <div id="comment-form" class="c-comment-form">
+            <label for="comment">Comment</label>
+            <textarea type="text" placeholder="Comment" class="comment-text" id="comment"></textarea>
+            <label for="username">Username</label>
+
+            <input type="text" placeholder="Username" class="username-text" id="username"/>
+            <button class="comment-save">Save</button>
+
+        </div>
+    </div>
+    <div id="comments"></div>
+</div>
+<script src="http://localhost:3232/bundle.js"></script>
+</body>
+</html>

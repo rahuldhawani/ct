@@ -1,0 +1,25 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  font-size: 12px;
+  line-height: 1;
+
+
+  @include MQ(L) {
+    font-size: 14px;
+  }
+}
+
+
+
+.l-container {
+  @include MQ(M) {
+    width: 748px;
+  }
+
+  @include MQ(L) {
+    width: 1170px;
+  }
+}
